@@ -1,0 +1,12 @@
+{
+  "title": "About Us",
+  "name": "Celia Liang",
+  "paragraphs": [
+    "Hi, I'm Celia! I'm a senior at New York University pursuing a B.A. in Computer Science, with an expected graduation date of May 2027. My coursework includes Software Engineering, Web Design, Applied Internet Technology, and Big Data.",
+    "I enjoy frontend development and building personal websites with HTML, CSS, and JavaScript. I built and maintain my personal blog at becomingcelia.com. My interest in web design started in eighth grade, when an art class inspired me to create a design portfolio blog.",
+    "My programming background includes Python, JavaScript, Java, C, HTML, and CSS. I also work with tools such as Git, VS Code, Figma, and Blender. I want to keep developing my software engineering skills and grow as a developer.",
+    "Outside of programming, I have three cats and two turtles at home. I love exploring classical music, especially string instruments and modern piano pieces. I'm a native Chinese speaker and am fluent in English."
+  ],
+  "imageUrl": "/images/celia-liang.jpg",
+  "imageAlt": "Celia Liang standing on a colorful city street"
+}

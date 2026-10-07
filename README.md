@@ -15,6 +15,12 @@ To complete this exercise:
 1. run this app locally on your own machine (instructions for launching the app below)
 1. add a new page to the app called "About Us", where you have written a few paragraphs about yourself and included a photo of yourself. The page content, including all text and the URL to the image must be retrieved as `JSON` data from a new route you create on the back-end.
 
+## About Us page
+
+After starting the database, back end, and front end, choose **About Us** in the navigation or visit http://localhost:7002/about.
+
+The React page gets its text and photo URL from http://localhost:5002/about. The content is stored in `back-end/data/about.json`, and the photo is in `back-end/public/images/celia-liang.jpg`.
+
 ## How to launch the app
 
 ### Get the code

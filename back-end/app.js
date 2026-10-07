@@ -3,6 +3,8 @@ const express = require('express') // CommonJS import style!
 const morgan = require('morgan') // middleware for nice logging of incoming HTTP requests
 const cors = require('cors') // middleware for enabling CORS (Cross-Origin Resource Sharing) requests.
 const mongoose = require('mongoose')
+const path = require('path')
+const about = require('./data/about.json')
 
 const app = express() // instantiate an Express object
 app.use(morgan('dev', { skip: (req, res) => process.env.NODE_ENV === 'test' })) // log all incoming requests, except when in unit test mode.  morgan has a few logging default styles - dev is a nice concise color-coded style
@@ -11,6 +13,12 @@ app.use(cors()) // allow cross-origin resource sharing
 // use express's builtin body-parser middleware to parse any data included in a request
 app.use(express.json()) // decode JSON-formatted incoming POST data
 app.use(express.urlencoded({ extended: true })) // decode url-encoded incoming POST data
+
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')))
+
+app.get('/about', (req, res) => {
+  res.json(about)
+})
 
 // connect to database
 mongoose
